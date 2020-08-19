@@ -1,0 +1,72 @@
+ .root {
+    -fx-background-image: url("/Images/e.png");
+}
+
+
+#tab1, #tab2, #tab3{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+}
+
+#tab1{
+    -fx-background-color:#34dbeb;
+}
+
+#tab2{
+    -fx-background-color:#34bdeb;
+}
+
+#tab3{
+    -fx-background-color:#347deb;
+}
+
+
+
+
+#Q12019{
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+        -fx-text-fill: black;
+
+}
+
+#selectedStation{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+
+
+}
+
+.label{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+            -fx-text-fill: black;
+}
+
+.Q1figures, #Q2SelectedStation{
+    -fx-font-size: 20px;
+        -fx-font-weight: bold;
+                -fx-text-fill: black;
+
+}
+
+.menu-button{
+        -fx-font-size: 15px;
+        -fx-font-weight: bold;
+        -fx-background-color: #ebc334;
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    -fx-background-color: linear-gradient(#030770, #030770);
+}
+
+
+.button:hover {
+-fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}

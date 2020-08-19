@@ -1,0 +1,231 @@
+Number: 0
+Station: ABERPORTH
+Highest Monthly Mean (tMax): 18.3
+Lowest Monthly Mean (tMin):: 3.9
+Total Air Frost Days: 4
+Total Rainfall: 1008.4
+
+Number: 1
+Station: ARMAGH
+Highest Monthly Mean (tMax): 19.8
+Lowest Monthly Mean (tMin):: 2.3
+Total Air Frost Days: 30
+Total Rainfall: 782.1
+
+Number: 2
+Station: BALLYPATRICK FOREST
+Highest Monthly Mean (tMax): 16.8
+Lowest Monthly Mean (tMin):: 2.9
+Total Air Frost Days: 16
+Total Rainfall: 1354.8
+
+Number: 3
+Station: BRADFORD
+Highest Monthly Mean (tMax): 19.9
+Lowest Monthly Mean (tMin):: 1.8
+Total Air Frost Days: 33
+Total Rainfall: 737.4
+
+Number: 4
+Station: BRAEMAR
+Highest Monthly Mean (tMax): 17.0
+Lowest Monthly Mean (tMin):: -1.6
+Total Air Frost Days: 108
+Total Rainfall: 670.4
+
+Number: 5
+Station: CAMBORNE
+Highest Monthly Mean (tMax): 18.7
+Lowest Monthly Mean (tMin):: 5.3
+Total Air Frost Days: 2
+Total Rainfall: 1019.2
+
+Number: 6
+Station: CAMBRIDGE NIAB
+Highest Monthly Mean (tMax): 22.1
+Lowest Monthly Mean (tMin):: 0.5
+Total Air Frost Days: 34
+Total Rainfall: 606.7
+
+Number: 7
+Station: CARDIFF BUTE PARK
+Highest Monthly Mean (tMax): 21.4
+Lowest Monthly Mean (tMin):: 2.0
+Total Air Frost Days: 34
+Total Rainfall: 1025.3
+
+Number: 8
+Station: CHIVENOR
+Highest Monthly Mean (tMax): 20.2
+Lowest Monthly Mean (tMin):: 3.7
+Total Air Frost Days: 7
+Total Rainfall: 936.8
+
+Number: 10
+Station: DUNSTAFFNAGE
+Highest Monthly Mean (tMax): 18.2
+Lowest Monthly Mean (tMin):: 2.6
+Total Air Frost Days: 16
+Total Rainfall: 1667.6
+
+Number: 12
+Station: EASTBOURNE
+Highest Monthly Mean (tMax): 20.9
+Lowest Monthly Mean (tMin):: 1.6
+Total Air Frost Days: 17
+Total Rainfall: 736.3
+
+Number: 13
+Station: ESKDALEMUIR
+Highest Monthly Mean (tMax): 17.1
+Lowest Monthly Mean (tMin):: -0.8
+Total Air Frost Days: 86
+Total Rainfall: 1742.7
+
+Number: 14
+Station: HEATHROW
+Highest Monthly Mean (tMax): 24.0
+Lowest Monthly Mean (tMin):: 0.7
+Total Air Frost Days: 25
+Total Rainfall: 574.4
+
+Number: 15
+Station: HURN
+Highest Monthly Mean (tMax): 22.2
+Lowest Monthly Mean (tMin):: -0.1
+Total Air Frost Days: 38
+Total Rainfall: 766.3
+
+Number: 16
+Station: LERWICK
+Highest Monthly Mean (tMax): 14.7
+Lowest Monthly Mean (tMin):: 2.3
+Total Air Frost Days: 24
+Total Rainfall: 1409.7
+
+Number: 17
+Station: LEUCHARS
+Highest Monthly Mean (tMax): 18.9
+Lowest Monthly Mean (tMin):: 0.4
+Total Air Frost Days: 57
+Total Rainfall: 615.6
+
+Number: 18
+Station: LOWESTOFT
+Highest Monthly Mean (tMax): 21.6
+Lowest Monthly Mean (tMin):: 1.6
+Total Air Frost Days: 23
+Total Rainfall: 569.6
+
+Number: 19
+Station: MANSTON
+Highest Monthly Mean (tMax): 22.8
+Lowest Monthly Mean (tMin):: 0.7
+Total Air Frost Days: 25
+Total Rainfall: 512.0
+
+Number: 20
+Station: NAIRN
+Highest Monthly Mean (tMax): 18.3
+Lowest Monthly Mean (tMin):: 1.1
+Total Air Frost Days: 48
+Total Rainfall: 706.8
+
+Number: 21
+Station: NEWTON RIGG
+Highest Monthly Mean (tMax): 18.3
+Lowest Monthly Mean (tMin):: -0.3
+Total Air Frost Days: 65
+Total Rainfall: 980.5
+
+Number: 22
+Station: OXFORD
+Highest Monthly Mean (tMax): 22.7
+Lowest Monthly Mean (tMin):: 0.8
+Total Air Frost Days: 34
+Total Rainfall: 630.5
+
+Number: 23
+Station: PAISLEY
+Highest Monthly Mean (tMax): 18.7
+Lowest Monthly Mean (tMin):: -0.8
+Total Air Frost Days: 57
+Total Rainfall: 1214.3
+
+Number: 25
+Station: ROSS-ON-WYE
+Highest Monthly Mean (tMax): 22.4
+Lowest Monthly Mean (tMin):: 0.9
+Total Air Frost Days: 36
+Total Rainfall: 640.3
+
+Number: 26
+Station: SHAWBURY
+Highest Monthly Mean (tMax): 21.7
+Lowest Monthly Mean (tMin):: 0.9
+Total Air Frost Days: 48
+Total Rainfall: 668.4
+
+Number: 27
+Station: SHEFFIELD
+Highest Monthly Mean (tMax): 21.2
+Lowest Monthly Mean (tMin):: 2.2
+Total Air Frost Days: 17
+Total Rainfall: 697.0
+
+Number: 29
+Station: STORNOWAY AIRPORT
+Highest Monthly Mean (tMax): 16.6
+Lowest Monthly Mean (tMin):: 2.3
+Total Air Frost Days: 16
+Total Rainfall: 1237.0
+
+Number: 30
+Station: SUTTON BONINGTON
+Highest Monthly Mean (tMax): 21.9
+Lowest Monthly Mean (tMin):: 1.0
+Total Air Frost Days: 35
+Total Rainfall: 648.2
+
+Number: 31
+Station: TIREE
+Highest Monthly Mean (tMax): 16.6
+Lowest Monthly Mean (tMin):: 3.8
+Total Air Frost Days: 6
+Total Rainfall: 1335.8
+
+Number: 32
+Station: VALLEY
+Highest Monthly Mean (tMax): 18.8
+Lowest Monthly Mean (tMin):: 4.3
+Total Air Frost Days: 11
+Total Rainfall: 870.0
+
+Number: 33
+Station: WADDINGTON
+Highest Monthly Mean (tMax): 21.3
+Lowest Monthly Mean (tMin):: 1.0
+Total Air Frost Days: 28
+Total Rainfall: 583.6
+
+Number: 34
+Station: WHITBY
+Highest Monthly Mean (tMax): 19.8
+Lowest Monthly Mean (tMin):: 2.0
+Total Air Frost Days: 21
+Total Rainfall: 1249.0
+
+Number: 35
+Station: WICK AIRPORT
+Highest Monthly Mean (tMax): 16.3
+Lowest Monthly Mean (tMin):: 1.6
+Total Air Frost Days: 29
+Total Rainfall: 919.8
+
+Number: 36
+Station: YEOVILTON
+Highest Monthly Mean (tMax): 21.7
+Lowest Monthly Mean (tMin):: 0.7
+Total Air Frost Days: 44
+Total Rainfall: 649.6
+

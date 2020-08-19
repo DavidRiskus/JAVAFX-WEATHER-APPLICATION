@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--TAB PANE-->
+<TabPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <tabs>
+
+<!--       ################# QUESTION 1 TAB - "Last Year's Stats and Report" ################################################### -->
+
+      <Tab fx:id="tab1" closable="false" text="Last Year's Stats and Report">
+         <content>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="749.0" prefWidth="1494.0" stylesheets="@style.css">
+              <columnConstraints>
+                <ColumnConstraints maxWidth="740.0" minWidth="10.0" prefWidth="740.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="240.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="325.0" />
+              </columnConstraints>
+<!--                SIZE CONSTRAINTS-->
+              <rowConstraints>
+                  <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="41.0" />
+                  <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="41.0" />
+                  <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="25.0" />
+                  <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="57.0" />
+                  <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="41.0" />
+                  <RowConstraints maxHeight="81.0" minHeight="8.0" prefHeight="37.0" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="38.0" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="47.0" />
+                  <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="47.0" />
+                <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="47.0" />
+                <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="47.0" />
+                  <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="0.0" />
+              </rowConstraints>
+
+<!--                LABEL ELEMENTS FOR "Last Year Stats and Report"-->
+               <children>
+                  <Label prefHeight="26.0" prefWidth="728.0" style="-fx-font-weight: bold;" styleClass="Q1figures" stylesheets="@style.css" text="HIGHEST MONTHLY MEAN MAXIMUM TEMPERATURE (tMAX)" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label prefHeight="25.0" prefWidth="706.0" style="-fx-font-weight: bold;" styleClass="Q1figures" text="LOWEST MONTHLY MEAN MINIMUM TEMPERATURE  (tMIN)" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label prefHeight="15.0" prefWidth="276.0" style="fx-font-weight: bold;" styleClass="Q1figures" text="TOTAL AIR FROST DAYS" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label prefHeight="15.0" prefWidth="276.0" styleClass="Q1figures" text="TOTAL RAINFALL" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+
+<!--                   DROPDOWN MENU FOR QUESTION 1 STATION NAMES-->
+                  <MenuButton fx:id="question1menubar" mnemonicParsing="false" prefHeight="25.0" prefWidth="289.0" text="Meteorological Station" GridPane.rowIndex="3">
+                    <items>
+                    </items>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </MenuButton>
+                  <Label fx:id="tMax" styleClass="Q1figures" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="tMin" styleClass="Q1figures" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AF" styleClass="Q1figures" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Rainfall" styleClass="Q1figures" text="0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+
+<!--                   TITLE FOR QUESTION 1-->
+                  <Text fx:id="Q12019" strokeType="OUTSIDE" strokeWidth="0.0" text="2019 Statistics" textAlignment="RIGHT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Text>
+
+<!--                   SELECTED STATION LABEL-->
+                  <Label fx:id="selectedStation" prefHeight="25.0" prefWidth="590.0" text="Selected Station:" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+<!--                   QUESTION 1 REPORT BUTTONS-->
+                  <Button fx:id="Q1CSVReport" mnemonicParsing="false" prefHeight="25.0" prefWidth="289.0" style=": bold;" text="Generate 2019 CSV Report" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="Q1TXTReport" mnemonicParsing="false" prefHeight="25.0" prefWidth="289.0" text="Generate 2019 TEXT Report" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </content>
+      </Tab>
+
+<!--       ################# QUESTION 2 TAB - "Year Comparison" ################################################### -->
+
+
+      <Tab fx:id="tab2" closable="false" text="Year Comparison">
+         <content>
+             <GridPane layoutX="1.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="965.0" prefWidth="1499.0" stylesheets="@style.css">
+                 <columnConstraints>
+                     <ColumnConstraints maxWidth="421.0" minWidth="10.0" prefWidth="388.0" />
+                  <ColumnConstraints maxWidth="421.0" minWidth="10.0" prefWidth="388.0" />
+                     <ColumnConstraints maxWidth="421.0" minWidth="10.0" prefWidth="388.0" />
+                  <ColumnConstraints maxWidth="421.0" minWidth="10.0" prefWidth="371.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                  <RowConstraints maxHeight="297.0" minHeight="10.0" prefHeight="50.0" vgrow="NEVER" />
+                     <RowConstraints maxHeight="297.0" minHeight="10.0" prefHeight="42.0" />
+                     <RowConstraints maxHeight="409.0" minHeight="10.0" prefHeight="351.0" />
+                     <RowConstraints maxHeight="409.0" minHeight="10.0" prefHeight="351.0" />
+                 </rowConstraints>
+
+<!--            QUESTION 2 CHART ELEMENTS -->
+
+                 <children>
+                     <LineChart fx:id="RainfallChart" legendVisible="false" prefHeight="416.0" prefWidth="791.0" title="Rainfall / month" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                         <xAxis>
+                             <NumberAxis autoRanging="false" label="Month" lowerBound="1.0" minorTickCount="1" prefHeight="41.0" prefWidth="667.0" side="BOTTOM" tickLabelFill="#280404" tickLabelGap="1.0" tickUnit="1.0" upperBound="12.0">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></NumberAxis>
+                         </xAxis>
+                         <yAxis>
+                             <NumberAxis label="Rainfall" prefHeight="260.0" side="LEFT" style=": bold;" tickLabelFill="#280404db">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></NumberAxis>
+                         </yAxis>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     </LineChart>
+                     <BarChart fx:id="tMaxChart" barGap="2.0" categoryGap="4.0" legendVisible="false" prefHeight="416.0" prefWidth="791.0" title="The Mean max temp / month" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                         <xAxis>
+                             <CategoryAxis label="Month" prefHeight="41.0" prefWidth="640.0" side="BOTTOM" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></CategoryAxis>
+                         </xAxis>
+                         <yAxis>
+                             <NumberAxis label="tMax" prefHeight="260.0" side="LEFT" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></NumberAxis>
+                         </yAxis>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                     </BarChart>
+                     <BarChart fx:id="tMinChart" prefHeight="416.0" prefWidth="791.0" title="The Mean min temp / month" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                         <xAxis>
+                             <CategoryAxis label="Month" prefHeight="41.0" side="BOTTOM" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></CategoryAxis>
+                         </xAxis>
+                         <yAxis>
+                             <NumberAxis label="tMin" prefHeight="260.0" side="LEFT" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></NumberAxis>
+                         </yAxis>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" right="10.0" />
+                     </GridPane.margin>
+                     </BarChart>
+
+<!--                QUESTION 2 SELECT STATION NAME DROPDOWN MENU-->
+                     <MenuButton fx:id="question2menubar" mnemonicParsing="false" text="Meteorological Station" GridPane.rowIndex="1">
+                         <items>
+                         </items>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     </MenuButton>
+
+<!--                QUESTION 2 SELECT YEAR1 DROPDOWN MENU-->
+                     <MenuButton fx:id="chartYear" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Year" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                         <items>
+                         </items>
+                     <GridPane.margin>
+                        <Insets left="180.0" />
+                     </GridPane.margin>
+                     </MenuButton>
+
+<!--                QUESTION 2 SELECT YEAR2 DROPDOWN MENU-->
+                  <MenuButton fx:id="chartYearCompare" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Year" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <items>
+                    </items>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </MenuButton>
+
+<!--                QUESTION 2 SELECTED STATION NAME LABEL-->
+                  <Label fx:id="Q2SelectedStation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="49.0" prefWidth="426.0" text="Selected Station:" GridPane.columnSpan="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+
+ <!--                QUESTION 2 SELECTED YEAR 1  LABEL-->
+                  <Label fx:id="selectedYear1" prefHeight="19.0" prefWidth="230.0" text="Selected Year: " GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="180.0" />
+                     </GridPane.margin></Label>
+
+ <!--                QUESTION 2 SELECTED YEAR 2  LABEL-->
+                  <Label fx:id="selectedYear2" prefHeight="25.0" prefWidth="900.0" text="Compare to Year(s):" GridPane.columnIndex="2" GridPane.columnSpan="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></Label>
+
+<!--                QUESTION 2 CLEAR DATA BUTTON-->
+                  <Button fx:id="Q2clearData" mnemonicParsing="false" prefHeight="29.0" prefWidth="155.0" text="Clear Data" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></Button>
+
+                     <LineChart fx:id="AFChart" prefHeight="416.0" prefWidth="791.0" title="Air Frost Days / month" GridPane.columnSpan="2" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+                    <xAxis>
+                        <NumberAxis autoRanging="false" label="Month" lowerBound="1.0" minorTickCount="1" prefHeight="41.0" prefWidth="667.0" side="BOTTOM" tickLabelFill="#280404" tickLabelGap="1.0" tickUnit="1.0" upperBound="12.0">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></NumberAxis>
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="A.F. Days" prefHeight="260.0" side="LEFT" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></NumberAxis>
+                    </yAxis>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" />
+                     </GridPane.margin>
+                  </LineChart>
+
+                 </children>
+             </GridPane>
+         </content>
+      </Tab>
+
+<!--       ################# QUESTION 3 TAB - "Station Comparison and Report" ################################################### -->
+
+      <Tab fx:id="tab3" closable="false" text="Station Comparison and Report">
+         <content>
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="749.0" prefWidth="1499.0" stylesheets="@style.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="155.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="389.0" minHeight="10.0" prefHeight="293.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="310.0" minHeight="10.0" prefHeight="278.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+
+<!--                QUESTION 3 SELECT STATION NAME DROPDOWN MENU-->
+                  <MenuButton fx:id="question3menubar" mnemonicParsing="false" text="Meteorological Station">
+                     <GridPane.margin>
+                        <Insets bottom="100.0" left="20.0" top="20.0" />
+                     </GridPane.margin></MenuButton>
+
+<!--                QUESTION 3 "Generate Text Report" BUTTON-->
+                  <Button fx:id="generateReport" maxWidth="204.0" mnemonicParsing="false" prefHeight="289.0" text="Generate Text Report" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="100.0" left="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Button>
+
+<!--                QUESTION 3 BARCHART - AVERAGE ANNUAL AIRFROTST DAYS-->
+                  <BarChart fx:id="Q3AFChart" animated="false" categoryGap="1.0" legendSide="TOP" legendVisible="false" prefHeight="260.0" prefWidth="1493.0" title="Average annual Air Frost Days:" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                    <xAxis>
+                      <CategoryAxis animated="false" label="Station Name" side="BOTTOM" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></CategoryAxis>
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis animated="false" label="Avg. Annual A.F. Days" prefHeight="406.0" prefWidth="77.0" side="LEFT" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="15.0" />
+                           </tickLabelFont></NumberAxis>
+                    </yAxis>
+                     <GridPane.margin>
+                        <Insets bottom="100.0" left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </BarChart>
+<!--                QUESTION 3 CLEAR DATA BUTTON -->
+                  <Button fx:id="Q3clearData" mnemonicParsing="false" text="Clear Data">
+                     <GridPane.margin>
+                        <Insets bottom="80.0" left="300.0" />
+                     </GridPane.margin>
+                  </Button>
+
+<!--                QUESTION 3 "Generate CSV Report" BUTTON-->
+                  <Button fx:id="generateReportCSV" maxWidth="204.0" mnemonicParsing="false" prefHeight="289.0" text="Generate CSV Report" GridPane.columnIndex="1">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets bottom="100.0" left="300.0" top="20.0" />
+                     </GridPane.margin>
+                  </Button>
+
+<!--                QUESTION 3 RAINFALL BAR CHART-->
+                  <BarChart id="Q3RainfallChart" fx:id="Q3RainfallChart" animated="false" categoryGap="1.0" legendSide="TOP" legendVisible="false" prefHeight="260.0" prefWidth="1493.0" title="Average annual Rainfall:" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                    <xAxis>
+                      <CategoryAxis animated="false" label="Station Name" side="BOTTOM" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="13.0" />
+                           </tickLabelFont></CategoryAxis>
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis animated="false" label="Avg. Annual Rainfall" prefHeight="406.0" prefWidth="77.0" side="LEFT" tickLabelFill="#280404">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="15.0" />
+                           </tickLabelFont></NumberAxis>
+                    </yAxis>
+                     <GridPane.margin>
+                        <Insets bottom="100.0" left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </BarChart>
+               </children>
+            </GridPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
