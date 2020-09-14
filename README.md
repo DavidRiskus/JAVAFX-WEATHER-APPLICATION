@@ -19,11 +19,11 @@ JavaFX SIMPLE UI Application reads and analyses provided .CSV format historical 
 
 <img src="https://i.imgur.com/o9z7AEe.png" alt="Loading Screen" width="600" height="250"/>
 
+### Adding New CSV files to the application:
+<img src="https://i.imgur.com/OGAKhNy.png" alt="2019 TEXT Report" width="600" height="400"/>
+
 ### 2019 Stats:
 <img src="https://i.imgur.com/SfAFM4W.png" alt="2019 stats" width="600" height="400"/>
-
-### Adding New CSV files to the application:
-<img src="https://i.imgur.com/OGAKhNy.png" alt="2019 TEXT Report" width="600" height="250"/>
 
 ### TEXT 2019 Stats Report:
 <img src="https://i.imgur.com/p3Iobk1.png" alt="2019 TEXT Report" width="600" height="400"/>
