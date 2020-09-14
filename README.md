@@ -22,7 +22,8 @@ JavaFX SIMPLE UI Application reads and analyses provided .CSV format historical 
 ### 2019 Stats:
 <img src="https://i.imgur.com/SfAFM4W.png" alt="2019 stats" width="600" height="400"/>
 
+### TEXT 2019 Stats Report:
+<img src="https://i.imgur.com/p3Iobk1.png" alt="2019 TEXT Report" width="600" height="400"/>
+
 ### CSV 2019 Stats Report:
-<img src="https://i.imgur.com/p3Iobk1.png" alt="2019 CSV Report" width="600" height="400"/>
-
-
+<img src="https://i.imgur.com/jcV44DY.png" alt="2019 TEXT Report" width="600" height="400"/>
