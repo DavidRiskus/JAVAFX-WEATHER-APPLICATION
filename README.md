@@ -11,4 +11,4 @@ JavaFX SIMPLE UI Application reads and analyses provided .CSV format historical 
 
 3. Locate and add the JavaFX Library
 
-
+<img src="https://i.imgur.com/o9z7AEe.png" alt="Loading Screen" width="300"/>
