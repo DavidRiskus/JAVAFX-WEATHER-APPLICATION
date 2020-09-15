@@ -31,11 +31,11 @@ JavaFX SIMPLE UI Application reads and analyses provided .CSV format historical 
 ### CSV 2019 Stats Report:
 <img src="https://i.imgur.com/jcV44DY.png" alt="2019 CSV Report" width="600" height="250"/>
 
-### Year/Station Data Visualisation Comparison:
+### Station's Yearly Data Visualisation Comparison:
 <img src="https://i.imgur.com/sJcLEYE.png" alt="Visualisation Comparison Report" width="600" height="300"/>
 
-
-
+### Station's Year on Year Data Visualisation Comparison:
+<img src="https://i.imgur.com/sJcLEYE.png" alt="Visualisation Comparison Report" width="600" height="300"/>
 
 
 
