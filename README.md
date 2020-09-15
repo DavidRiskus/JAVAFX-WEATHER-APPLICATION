@@ -35,7 +35,7 @@ JavaFX SIMPLE UI Application reads and analyses provided .CSV format historical 
 <img src="https://i.imgur.com/sJcLEYE.png" alt="Visualisation Comparison Report" width="600" height="300"/>
 
 ### Station's Year on Year Data Visualisation Comparison:
-<img src="https://i.imgur.com/sJcLEYE.png" alt="Visualisation Comparison Report" width="600" height="300"/>
+<img src="https://i.imgur.com/63NgZFA.png" alt="Visualisation Comparison Report" width="600" height="300"/>
 
 
 
